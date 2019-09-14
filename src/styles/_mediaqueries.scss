@@ -1,0 +1,30 @@
+@media screen and (min-width: 450px){
+    .wrapperGrid{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "upper upper upper upper upper"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "lower lower lower lower lower"
+    }
+}
+@media screen and (min-width: 700px){
+    .wrapperGrid{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "upper upper upper upper upper"
+        "upper upper upper upper upper"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "middleLeft middleLeft middleLeft middleRight middleRight"
+        "lower lower lower lower lower"
+        "lower lower lower lower lower"
+    }
+}
