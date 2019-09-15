@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run watch-sass && serve ./src/html/signup.html",
+    "sass": "node-sass --include-path scss src/styles/styles.scss src/styles/styles.css",
+    "watch-sass": "nodemon -e scss -x \"npm run sass\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/habinezadalvan/haven/issues"
   },
-  "homepage": "https://github.com/habinezadalvan/haven#readme"
+  "homepage": "https://github.com/habinezadalvan/haven#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.2",
+    "serve": "^11.1.0"
+  }
 }

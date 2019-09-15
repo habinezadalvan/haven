@@ -47,6 +47,11 @@ body {
   font-weight: 300;
 }
 
+.wrapperGrid .upper a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .wrapperGrid .middle-left .form-div {
   margin: 0px auto;
   width: 60%;
