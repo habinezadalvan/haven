@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>view Article</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="top-p"><p>Authors' haven</p></div>
+        <div class="top-buttons">
+          <div class="header-btn">
+            <a href="./login.html">Login</a>
+            <a href="./signup.html" class="submit-btn">Sign up</a>
+          </div>
+        </div>
+      </div>
+      <div class="left-side">
+        <div class="icon">
+          <img
+            src="../images/userIcon.png"
+            alt="user icon"
+            width="40px"
+            height="40px"
+          />
+          <button class="submit-btn">Follow</button>
+        </div>
+        <div class="userprofilename">
+          <p>John Doe</p>
+          <p>32 Publications</p>
+        </div>
+      </div>
+      <div class="middle-up">
+        <div class="article-part">
+          <div class="article-title">
+            <h1>Testing Arrays and Objects with Chai.js</h1>
+          </div>
+          <div class="article-description">
+            <h4>
+              When it comes to testing arrays and objects with Chai.js sometimes
+              the selection of flagging properties and assertions becomes
+              confusing. nested? deep? own? include?
+            </h4>
+          </div>
+          <div class="article-image">
+            <img
+              src="../images/tests.png"
+              alt="article image"
+              width="100%"
+              height="200px"
+            />
+          </div>
+          <div class="article-paragraph">
+            <p>
+              If you missed part 1, the differences between a flagging property
+              and chainable method, it’s worth skimming through that article to
+              catch up before proceeding.
+
+              <br />
+              <br />
+              <strong>Equality</strong>
+              <br />
+              <br />
+
+              At the heart of much of the confusion around making assertions on
+              arrays and object is Javascript’s notion of equality. expect([1,
+              2, 3]).to.equal([1, 2, 3]); // fails This can be surprising, and
+              downright frustrating at times, especially for programmers coming
+              to Javascript from other languages. The equality being expressed
+              in the example above is actually a core mechanic of Javascript,
+              not of Chai.js. Open up a node session and try the following: $
+              node > [1,2,3] === [1,2,3] false
+            </p>
+          </div>
+          <div class="article-paragraph">
+                <p>
+                  If you missed part 1, the differences between a flagging property
+                  and chainable method, it’s worth skimming through that article to
+                  catch up before proceeding.
+    
+                  <br />
+                  <br />
+                  <strong>Equality</strong>
+                  <br />
+                  <br />
+    
+                  At the heart of much of the confusion around making assertions on
+                  arrays and object is Javascript’s notion of equality. expect([1,
+                  2, 3]).to.equal([1, 2, 3]); // fails This can be surprising, and
+                  downright frustrating at times, especially for programmers coming
+                  to Javascript from other languages. The equality being expressed
+                  in the example above is actually a core mechanic of Javascript,
+                  not of Chai.js. Open up a node session and try the following: $
+                  node > [1,2,3] === [1,2,3] false
+                </p>
+              </div>
+        </div>
+        <div class="middle-line"></div>
+        <div class="article-events">
+            <div class="L">
+                <div class="l-icon">
+                    <i class="fas fa-thumbs-up"></i>
+                    <p>15k</p>
+                </div>
+                <div class="l-icon">
+                    <i class="fas fa-thumbs-down"></i>
+                    <p>123</p>
+                </div>
+                <div class="l-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="M">
+                <p><span>154</span> comments</p>
+                <div class="plus-circle">
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+            </div>
+            <div class="R">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-google"></i>
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+      </div>
+      <div class="middle-down">
+        <h1>Most recent on Author’s Haven</h1>
+        <div class="popular-div">
+          <div class="article-box">
+            <div class="image-div">
+              <img src="../images/programming.jpg" alt="nature image">
+            </div>
+            <div class="below-image-part">
+                <div class="profile-div">
+                    <div class="side-with-icon">
+                       <div class="icon-img">
+                          <img src="../images/userIcon.png" alt="user icon" width="15px" height="15px"/>
+                       </div>
+                       <div class="name-time">
+                         <p>Code pirates</p> 
+                         <p class="p-2"><span>2</span> <span>hours</span> ago</p> 
+                       </div>
+                       <div class="read-time">
+                         <p><span>3</span> min read</p>
+                       </div>
+      
+                    </div>
+                    <div class="side-with-rating">
+                        <div class="rate-p"><p>Rating:</p></div>
+                      <div class="stars">
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                      </div>
+                      <div class="elipse-dots">
+                          <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="summary-div">
+                    <h1>Is computer programming hard?</h1>
+                    <p>Programming is the process of creating a set of instructions that tell
+                      a computer how to perform a task. Programming can be done
+                      a computer how to perform a task. Programming can be done When true, class properties are compiled to use an assignment expression instead of Object.defineProperty.
+                      For an explanation of the consequences of using either, see Definition vs. Assignment (TL;DR in Part 5) ...
+                    </p>
+                  </div>
+                  <div class="middle-line"></div>
+                  <div class="lower-part-div">
+                    <div class="veiw-and-comment-div">
+                      <div class="view">
+                        <p><span>543</span> views</p>
+                      </div>
+                      <div class="write-comment">
+                        <p>Write comment</p>
+                      </div>
+                    </div>
+                    <div class="clap-div">
+                      <p>100</p>
+                      <i class="fas fa-sign-language"></i>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="article-box">
+              <div class="image-div">
+                <img src="../images/programming.jpg" alt="nature image">
+              </div>
+              <div class="below-image-part">
+                  <div class="profile-div">
+                      <div class="side-with-icon">
+                         <div class="icon-img">
+                            <img src="../images/userIcon.png" alt="user icon" width="15px" height="15px"/>
+                         </div>
+                         <div class="name-time">
+                           <p>Code pirates</p> 
+                           <p class="p-2"><span>2</span> <span>hours</span> ago</p> 
+                         </div>
+                         <div class="read-time">
+                           <p><span>3</span> min read</p>
+                         </div>
+        
+                      </div>
+                      <div class="side-with-rating">
+                          <div class="rate-p"><p>Rating:</p></div>
+                        <div class="stars">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="elipse-dots">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="summary-div">
+                      <h1>Is computer programming hard?</h1>
+                      <p>Programming is the process of creating a set of instructions that tell
+                        a computer how to perform a task. Programming can be done
+                        a computer how to perform a task. Programming can be done When true, class properties are compiled to use an assignment expression instead of Object.defineProperty.
+                        For an explanation of the consequences of using either, see Definition vs. Assignment (TL;DR in Part 5) ...
+                      </p>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="lower-part-div">
+                      <div class="veiw-and-comment-div">
+                        <div class="view">
+                          <p><span>543</span> views</p>
+                        </div>
+                        <div class="write-comment">
+                          <p>Write comment</p>
+                        </div>
+                      </div>
+                      <div class="clap-div">
+                        <p>100</p>
+                        <i class="fas fa-sign-language"></i>
+                      </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="pagination-div">
+          <div class="pag-circles">
+            <div class="pag-circle active"></div>
+            <div class="pag-circle"></div>
+            <div class="pag-circle"></div>
+            <div class="pag-circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="rating-pub-read-time">
+          <p>Published: <span>10th July, 2019</span></p>
+          <p>4 read min</p>
+        </div>
+        <div class="article-rates">
+          <div class="rate-p"><p>Rating:</p></div>
+          <div class="rate-stars">
+            <img
+              src="../images/yellowStar.png"
+              alt="yellow rating start"
+              height="12px"
+              width="12px"
+            />
+            <img
+              src="../images/yellowStar.png"
+              alt="yellow rating start"
+              height="12px"
+              width="12px"
+            />
+            <img
+              src="../images/yellowStar.png"
+              alt="yellow rating start"
+              height="12px"
+              width="12px"
+            />
+            <img
+              src="../images/blankRateStar.png"
+              alt="blankrating start"
+              height="12px"
+              width="12px"
+            />
+            <img
+              src="../images/blankRateStar.png"
+              alt="blankrating start"
+              height="12px"
+              width="12px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="middle-line"></div>
+        <div class="footer">
+          <div class="footer-icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-google"></i>
+          </div>
+          <div class="at-authors-haven">
+            <h3>@Authors' haven Andela</h3>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </body>
+</html>

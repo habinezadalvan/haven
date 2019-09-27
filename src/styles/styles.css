@@ -70,6 +70,11 @@ body {
   outline: none;
 }
 
+.wrapperGrid .middle-left .form-div .field input:hover {
+  border: 1px solid #2f80ed;
+  outline: #2f80ed;
+}
+
 .wrapperGrid .middle-left .form-div .field label {
   display: block;
   font-style: normal;
@@ -87,9 +92,7 @@ body {
 }
 
 .wrapperGrid .middle-left .form-div .submit-div input {
-  width: 100%;
-  height: 45px;
-  font-size: 18px;
+  color: #2f80ed;
   border: 1px solid #2f80ed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -99,10 +102,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: #2f80ed;
   font-style: normal;
   font-weight: 300;
+  width: 100%;
   outline: none;
+  height: 45px;
+  font-size: 18px;
 }
 
 .wrapperGrid .middle-left .form-div .submit-div input:hover {
@@ -391,6 +396,499 @@ body {
   }
   .wrapperGrid .middle-right .middle-right-content .msg-svg .Login-svg {
     margin: 20px 30px 0 0;
+  }
+}
+
+.top {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-area: topp;
+}
+
+.left-side {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: leftside;
+}
+
+.middle-up {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-area: middleup;
+}
+
+.middle-down {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-area: middledown;
+}
+
+.right-side {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: rightside;
+}
+
+.bottom {
+  -ms-grid-row: 12;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-area: bottomm;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(80px, auto);
+      grid-template-areas: "topp topp topp topp topp topp topp topp" " . leftside leftside leftside rightside rightside rightside ." " . middleup middleup middleup middleup middleup middleup . " " . middleup middleup middleup middleup middleup middleup . " " . middleup middleup middleup middleup middleup middleup . " " . middleup middleup middleup middleup middleup middleup . " " . middleup middleup middleup middleup middleup middleup . " " . middleup middleup middleup middleup middleup middleup . " " . middledown middledown middledown middledown  middledown middledown . " " . middledown middledown middledown middledown  middledown middledown . " " . middledown middledown middledown middledown  middledown middledown . " " . bottomm bottomm bottomm bottomm bottomm bottomm . ";
+}
+
+.container .top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .top .top-p {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.container .top .top-buttons {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 100%;
+  display: inline;
+  padding-top: 30px;
+  margin-left: 20px;
+}
+
+.container .top .top-buttons .submit-btn {
+  color: #2f80ed;
+  border: 1px solid #2f80ed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  background: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  width: 100px;
+  outline: none;
+  height: 18px;
+  font-size: 12px;
+  padding: 4px 10px;
+  margin-right: 10px;
+}
+
+.container .top .top-buttons a {
+  text-decoration: none;
+  color: #2f80ed;
+  margin-left: 20px;
+}
+
+.container .top .top-buttons a:hover {
+  background: #5b9ef7b7;
+  color: white;
+  border: none;
+}
+
+.container .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container .left-side .icon {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: block;
+}
+
+.container .left-side .icon button {
+  color: #2f80ed;
+  border: 1px solid #2f80ed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  background: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  width: 100%;
+  outline: none;
+  height: 18px;
+  font-size: 9px;
+  padding: 2px 5px;
+}
+
+.container .left-side .icon button:hover {
+  background: #5b9ef7b7;
+  color: white;
+  border: none;
+}
+
+.container .left-side .userprofilename {
+  font-size: 10px;
+  width: 100%;
+}
+
+.container .right-side {
+  font-size: 10px;
+}
+
+.container .right-side .article-rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container .right-side .article-rates .rate-p {
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+.container .middle-up .middle-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(196, 196, 196, 0.29);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  margin-bottom: 3px;
+}
+
+.container .middle-up .article-part h1 {
+  font-size: 25px;
+}
+
+.container .middle-up .article-part p {
+  font-size: 13px;
+}
+
+.container .middle-up .article-events {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  font-size: 10px;
+}
+
+.container .middle-up .article-events i:hover {
+  color: rgba(18, 134, 243, 0.9);
+}
+
+.container .middle-up .article-events .L {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .middle-up .article-events .L .l-icon {
+  margin-right: 10px;
+}
+
+.container .middle-up .article-events .L p {
+  margin-top: 2px;
+}
+
+.container .middle-up .article-events .M {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+}
+
+.container .middle-up .article-events .R {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  justify-items: end;
+}
+
+.container .middle-up .article-events .R i {
+  height: 20%;
+}
+
+.container .middle-down h1 {
+  font-size: 15px;
+}
+
+.container .middle-down .popular-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(120px, auto);
+}
+
+.container .middle-down .popular-div .article-box {
+  -webkit-box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container .middle-down .popular-div .article-box .image-div {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.container .middle-down .popular-div .article-box .image-div img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part {
+  padding: 5px;
+  width: 100%;
+  height: 50%;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .profile-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 6px;
+  margin-top: 2px;
+  font-weight: 100;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-icon {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-icon .name-time {
+  margin: -5px 0 0 1px;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-icon .name-time .p-2 {
+  margin-top: -4px;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-icon .read-time {
+  height: 7px;
+  margin: 4.3px 5px;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-rating {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-rating .rate-p {
+  margin-top: -5px;
+  -ms-flex-preferred-size: 18%;
+      flex-basis: 18%;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-rating .stars {
+  margin: 1px;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-rating .elipse-dots {
+  margin: 1px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .summary-div h1 {
+  font-size: 14px;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .summary-div p {
+  font-size: 10px;
+  width: 90%;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .middle-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(196, 196, 196, 0.29);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  margin-bottom: 3px;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .lower-part-div {
+  font-size: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .lower-part-div .veiw-and-comment-div {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .lower-part-div .veiw-and-comment-div .write-comment {
+  float: right;
+  margin-left: 20px;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .lower-part-div .clap-div {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .lower-part-div .clap-div p {
+  margin: 8px 2px 0 0;
+}
+
+.container .middle-down .popular-div .article-box .below-image-part .lower-part-div .clap-div i {
+  margin-top: 8px;
+}
+
+.container .middle-down .pagination-div {
+  margin-top: 15px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.container .middle-down .pagination-div .pag-circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .middle-down .pagination-div .pag-circles .pag-circle {
+  margin: 0px 1px;
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  -webkit-box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.container .middle-down .pagination-div .pag-circles .active {
+  background: #27aae1;
+}
+
+.container .bottom .middle-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(196, 196, 196, 0.29);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  margin-bottom: 3px;
+}
+
+.container .bottom .footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-areas: "topp topp topp topp topp topp topp topp topp topp" " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middleup middleup middleup middleup middleup middleup rightside . " " . leftside middledown middledown middledown middledown  middledown middledown rightside . " " . leftside middledown middledown middledown middledown  middledown middledown rightside . " " . leftside middledown middledown middledown middledown  middledown middledown rightside . " " . leftside middledown middledown middledown middledown  middledown middledown rightside . " " . leftside bottomm bottomm bottomm bottomm bottomm bottomm rightside . ";
+  }
+  .container .top .top-p {
+    font-size: 23px;
+    margin: auto 30px;
+    place-items: initial;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .container .top .top-buttons {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .container .top .top-buttons .header-btn {
+    float: right;
+    margin-right: 50px;
+  }
+  .container .middle-up .article-part h1 {
+    font-size: 25px;
+  }
+  .container .middle-up .article-part p {
+    font-size: 18px;
+  }
+  .container .middle-up .article-events {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .container .left-side {
+    width: 180%;
+    margin-left: -50px;
+  }
+  .container .left-side .icon {
+    margin: 2px;
+  }
+  .container .right-side {
+    width: 180%;
+  }
+  .container .middle-down .popular-div {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .container .middle-down .popular-div .article-box .below-image-part .profile-div {
+    font-size: 10px;
+  }
+  .container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-icon .name-time {
+    margin: -10px 0 0 4px;
+  }
+  .container .middle-down .popular-div .article-box .below-image-part .profile-div .side-with-icon .read-time {
+    margin-top: 8px;
+  }
+  .container .bottom .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: 0px;
+  }
+  .container .bottom .footer .at-authors-haven {
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
